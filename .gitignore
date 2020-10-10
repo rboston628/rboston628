@@ -1,0 +1,7 @@
+.textpadtmp/*
+.DS_Store
+*.aux
+*.log
+*.tex
+*.out
+*.gz
