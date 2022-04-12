@@ -1,7 +1,12 @@
+## IGNORE EVERYTHING -- MANUALLY INCLUDE INSTEAD
+*
+## ESPECIALLY IGNORE THESE
 .textpadtmp/*
 .DS_Store
-*.aux
-*.log
-*.tex
-*.out
-*.gz
+
+## EXCEPTIONS
+
+#reinclude CV and resume
+!BostonReeceCV2022.pdf
+!rboston_resume.pdf
+

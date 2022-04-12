@@ -1,6 +1,6 @@
 This is the GitHub page of Reece Boston.
 
-I am a PhD candidate at UNC, studying relativistic astrophysics.  [My university website](https://reeceboston.web.unc.edu).
+I am an astrophysicist, focusing in particular on relativistic white dwarf asteroseismology.  [My dissertation](https://github.com/rboston628/THESIS).
 
 [My CV](https://github.com/rboston628/rboston628/blob/master/BostonReeceCV2022.pdf) is available here in GitHub.
 
