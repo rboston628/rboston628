@@ -1,4 +1,7 @@
 ## IGNORE EVERYTHING -- MANUALLY INCLUDE INSTEAD
+# https://garywoodfine.com/remove-ignored-files-from-git-repository/
+
+
 *
 ## ESPECIALLY IGNORE THESE
 .textpadtmp/*
