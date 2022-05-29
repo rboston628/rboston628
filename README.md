@@ -21,7 +21,7 @@ I also have experience programming in R, python, SQL, x86, Objective-C and Java.
 
 ## bullet points
 
-- [My dissertation](https://github.com/rboston628/THESIS) is not yet available online, but will be linked when it is.
+- [My dissertation](https://cdr.lib.unc.edu/concern/dissertations/jw827n44n?locale=en) on white dwarf asteroseismology.
 
 - [My CV](https://github.com/rboston628/rboston628/blob/master/BostonReeceCV2022.pdf) is available here in GitHub.
 
