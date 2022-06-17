@@ -10,7 +10,7 @@ I am employed full-time as a data scientist for Community, an innovative SMS pla
 
 I am an adept programmer in C++, which is my preference for any production applications.  My two main coding projects for my research were both written entirely in C++.  This language was chosen because of its speed and control.  I deliberately use low-level constructs whenever possible.
 
-I also have experience programming in R, python, SQL, x86, Objective-C and Java.  In python, I have worked with pandas, seaborn, sklearn, statsmodels, flask, spaCy, and of course numpy and matplotlib.
+I also have experience programming in R, python, SQL, x86, Objective-C and Java.  In python, I have worked with pandas, seaborn, sklearn, statsmodels, FastAPI, spaCy, and of course numpy and matplotlib.
 
 ## research interests
 
@@ -23,9 +23,9 @@ I also have experience programming in R, python, SQL, x86, Objective-C and Java.
 
 - [My dissertation](https://cdr.lib.unc.edu/concern/dissertations/jw827n44n?locale=en) on white dwarf asteroseismology.
 
-- [My CV](https://github.com/rboston628/rboston628/blob/master/BostonReeceCV2022.pdf) is available here in GitHub.
+- [My CV](https://github.com/rboston628/rboston628/blob/master/BostonReeceCV2022.pdf) intended for academic positions can be accessed here.
 
-- [My resume](https://github.com/rboston628/rboston628/blob/master/rboston_resume.pdf) is also available.
+- [My resume](https://github.com/rboston628/rboston628/blob/master/rboston_resume.pdf) intended for technical roles can be accessed here.
 
 ### research code
 
