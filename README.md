@@ -4,7 +4,7 @@ I am an astrophysicist, focusing in particular on relativistic white dwarf aster
 
 My PhD in Physics was earned from the University of North Carolina in April, 2022.  I also attended the University of Georgia (MS Physics, 2015).  My undergraduate degree in Mathematics is from Georgia College (2010).
 
-I am employed full-time as a data scientist for Community, an innovative SMS platform allowing for personal conversations at scale.  I utilize statistics, machine learning, and natural language processing to help our customers engage their wide audiences.
+I am employed full-time as a quant researcher at Anchor Labs.
 
 ## technical summary
 
