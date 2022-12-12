@@ -36,6 +36,6 @@ My dissertation research required two codes to model the pulsations of white dwa
 
 ## about me
 
-I am from Atlanta, GA, and currently live in North Carolina with my wife, Nelly.  We are expecting our first child in August.  In my spare time I study physics, read fiction, and play old school dungeons and dragons.  I write a blog that was temporarily famous in 2012-2015 for its post about the Berenst#in Bears.
+I am from Atlanta, GA, and currently live in North Carolina with my wife, Nelly and our son Ezekiel.  In my spare time I study physics, read fiction, and play old school dungeons and dragons.  I write a blog that was temporarily famous in 2012-2015 for its post about the Berenst#in Bears.
 
 
