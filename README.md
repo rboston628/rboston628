@@ -4,20 +4,18 @@ I am an astrophysicist, focusing in particular on relativistic white dwarf aster
 
 My PhD in Physics was earned from the University of North Carolina in April, 2022.  I also attended the University of Georgia (MS Physics, 2015).  My undergraduate degree in Mathematics is from Georgia College (2010).
 
-I am employed full-time as a quant researcher at Anchor Labs.
+I am employed full-time as a Scientific Software Engineer at Oak Ridge National Laboratory (ORNL), in particular working on the SNAPRed and mantid programs for the Spallation Neutron Source.
 
 ## technical summary
 
-I am an adept programmer in C++, which is my preference for any production applications.  My two main coding projects for my research were both written entirely in C++.  This language was chosen because of its speed and control.  I deliberately use low-level constructs whenever possible.
+I am an adept programmer in C++, which is my preference for any production applications.  My two main coding projects for my research were both written entirely in C++. 
 
-I also have experience programming in R, python, SQL, x86, Objective-C and Java.  In python, I have worked with pandas, seaborn, sklearn, statsmodels, FastAPI, spaCy, and of course numpy and matplotlib.
+Additionally I have worked extensively with python on a number of projects.  In particular, I have worked with pandas, seaborn, sklearn, statsmodels, FastAPI, spaCy, and of course numpy and matplotlib.
 
 ## research interests
 
 - general relativistic stellar structure and linear pulsations
 - computer modeling of compact objects (neutron stars, white dwarfs)
-- Bayesian and bootstrap methods in statistics
-- causal inference modeling
 
 ## bullet points
 
@@ -36,6 +34,6 @@ My dissertation research required two codes to model the pulsations of white dwa
 
 ## about me
 
-I am from Atlanta, GA, and currently live in North Carolina with my wife, Nelly and our son Ezekiel.  In my spare time I study physics, read fiction, and play old school dungeons and dragons.  I write a blog that was temporarily famous in 2012-2015 for its post about the Berenst#in Bears.
+I am from Atlanta, GA, and live in Tennessee with my wife Nelly and our son Ezekiel.  In my spare time I study physics, read fiction, and play old school dungeons and dragons.  I write a blog that was temporarily famous in 2012-2015 for its post about the Berenst#in Bears.
 
 
