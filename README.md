@@ -21,7 +21,7 @@ Additionally I have worked extensively with python on a number of projects.  In 
 
 - [My dissertation](https://cdr.lib.unc.edu/concern/dissertations/jw827n44n?locale=en) on white dwarf asteroseismology.
 
-- [My CV](https://github.com/rboston628/rboston628/blob/master/BostonReeceCV2022.pdf) intended for academic positions can be accessed here.
+- [My CV](https://github.com/rboston628/rboston628/blob/master/BostonReeceCV2023.pdf) intended for academic positions can be accessed here.
 
 - [My resume](https://github.com/rboston628/rboston628/blob/master/rboston_resume.pdf) intended for technical roles can be accessed here.
 
