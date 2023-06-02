@@ -1,0 +1,174 @@
+\documentclass[11pt, letter]{article}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{tikz}
+
+% added these two lines for ATS
+% see https://www.reddit.com/r/LaTeX/comments/3nr2vn/how_can_i_ensure_that_my_latex_resume_is_readable/
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{graphicx}
+
+\usepackage[misc]{ifsym}
+
+\setlength{\voffset}{-0.5in}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\topmargin}{-.5in}
+\setlength{\headheight}{0in}
+\setlength{\textheight}{10.5in}
+
+
+\renewcommand*\ttdefault{txtt}
+
+\newcommand{\dotprod}{\boldsymbol{\cdot}}
+\newcommand{\binary}[1]{\texttt{#1}}
+\newcommand{\hex}[1]{\textsf{#1}}
+
+\input{decorators}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{multicols}{2}
+ \noindent %
+ {\tt \huge  Reece Boston},\hfill{\tt \large Ph.D.~Physics}\\%\vspace{5pt}\\
+	{\tt\small numerical astrophysics researcher\hfill\drawplanet}\\
+	{\tt\small seeking complex coding challenges\hfill\drawcalculator\hspace{1pt}\mbox{}}
+%
+ \columnbreak\\
+ \mbox{}\hfill{\tt  \small tel: \href{tel:770-355-0261}{770.355.0261}\hphantom{aaaaaaa}}\\  %12 + 7a = 19
+ \mbox{}\hfill{\tt  \small email: \href{mailto:Reece@thebostons.us}{reece@thebostons.us}}\\ %19
+ \mbox{}\hfill{\tt  \small github: \href{https://github.com/rboston628}{rboston628}\hphantom{aaaaaaaaa}}\\%10+9a=19
+ \mbox{}\hfill{\tt  \small linkedin: \href{https://www.linkedin.com/in/reece-boston-752046117/}{reece-boston}\hphantom{aaaaaaa}}%12+7a=19
+\end{multicols}
+
+%\section*{Technology Summary}
+\hrule
+\begin{itemize}
+\begin{multicols}{3}	
+		\item {\tt C++} ($>$10yr)\\
+			\mygauss{0.82}
+		\item {\tt R} ($>$10yr)\\
+			\mygauss{0.75}
+		\item {\tt python} (3yr)\\
+			\mygauss{0.63}
+%		\item {\tt SQL} (1yr)\\
+%			\mygauss{0.75}
+\end{multicols}
+		\item Misc.: SQL,  git,  GNU/Linux, bash, fortran, Java, HTML, Objective-C, x86 assembler.
+	\end{itemize}
+\hrule
+
+\vspace{-0.5\baselineskip}
+\section*{Work Experience}
+\begin{minipage}{\textwidth}
+	\begin{description}
+	\item[Scientific Software Engineer] at ORNL, Mar 2023 - present
+		\vspace{-0.5\baselineskip}
+		\begin{itemize}
+			\item design, build, test, and document code base for neutron scattering data reduction
+		\end{itemize}
+		\vspace{-0.5\baselineskip}
+		\underline{Technology}: C++; python; AGILE.
+	\item[Quant Researcher] at \href{https://www.anchorage.com}{Anchorage Digital}, Oct 2022 - Mar 2023
+		\vspace{-0.5\baselineskip}
+		\begin{itemize}
+			\item analyze cryptocurrency market liquidity
+		\end{itemize}
+		\vspace{-0.5\baselineskip}
+		\underline{Technology}: python; Google Cloud; BigQuery.
+	\item[R\&D Data Scientist] at \href{https://www.community.com/about-us}{Community}, Sept 2021 - June 2022
+		\vspace{-0.5\baselineskip}
+		\begin{itemize}
+			\item analyze big data for product insights using causal inference and market archetyping%
+%			\item work on team with data engineering to transform databases for data lakehouse [dbt]
+%			\item ownership of platform NLP microservices for SMS tagging
+%			\item present key findings to stakeholders in product and finance
+		\end{itemize}
+		\vspace{-0.5\baselineskip}
+		\underline{Technology}: python [pandas, numpy, sklearn, spaCy]; github; Snowflake SQL; Docker; AWS.
+	\item[Research Assistant] at University of North Carolina, Fall 2016 - Spring 2022
+		\vspace{-0.5\baselineskip}
+		\begin{itemize}
+			\item conducted scientific research leading to original publications
+			\item created original research code in C++ within Linux environment using GNU tools
+%			\item designed, built, tested and documented project during all development stages
+%			\item integrated with legacy and modern fortran code (e.g.~{\tt GYRE}, {\tt WDEC}, {\tt MESA}, and {\tt ZAMS})
+		\end{itemize}
+		\vspace{-0.5\baselineskip}
+		\underline{Technology}: 
+		C++ [gcc, STL, MPI multithreading, make]; bash scripting; github; fortran.
+%	\item[Teaching Professor] at University of North Carolina, Summer 2019, 2020
+%		\vspace{-0.5\baselineskip}
+%		\begin{itemize}
+%			\item communicated complex topics to non-experts in life sciences, with glowing evaluations
+%			\item recorded many of \href{https://www.youtube.com/playlist?list=PLGw8-QpmEugz6IxX75R1kvd9NM_53pQXV}{the online lectures} for COVID-19 response (Lec~7-10,14,26-27)
+%		\end{itemize}
+		\vspace{-0.5\baselineskip}
+	\end{description}
+\end{minipage}
+
+\section*{Research Codes}
+\begin{minipage}{\textwidth}
+	\begin{description}
+		\item[\href{https://github.com/rboston628/grpulse}{\tt GRPulse}:] High-precision asteroseismology code for Newtonian and relativistic stellar models.			
+		\item[\href{https://github.com/rboston628/thrain}{\tt Thrain}:] Astrophysics code to create simple white dwarf stars.
+	\end{description}
+\hrule
+\end{minipage}
+
+\vspace{-0.5\baselineskip}
+\section*{Research Publications}
+\begin{minipage}{\textwidth}
+%\def\staterole{0}
+%\input{papers}
+\begin{itemize}
+		\item Alejandro H.~C\'orsico, \underline{S.~Reece Boston} et al, 
+%			Leandro G.~Althaus, Mukremin Kilic, S.~O.~Kepler, Mar\'ia E.~Camisassa and Santiago Torres, 
+			``General relativistic pulsations of ultra-massive ZZ Ceti stars,'' 
+			\href{}{MNRAS}, 
+			[sub.~June 1, 2023].
+		\item Boston, S.~Reece, C.~R.~Evans and J.~C.~Clemens, 
+			``Relativistic Corrections in White Dwarf Asteroseismology.'' 
+			\href{}{Astrophysical Journal}, 
+			[acpt. May 9, 2023].
+		\item Boston, S.~Reece, 
+			\emph{Newtonian and Relativistic White Dwarf Asteroseismology}, 
+			\\\href{https://cdr.lib.unc.edu/concern/dissertations/jw827n44n?locale=en}{Ph.D. dissertation}, 
+			UNC, (2022).
+		\item de Souza, Rafael, \underline{S.~Reece Boston}, Alain Coc, and Christian Iliadis, 
+			``Thermonuclear fusion rates for tritium+deuterium using Bayesian methods.''  
+			\href{http://journals.aps.org/prc/abstract/10.1103/PhysRevC.99.014619}{Physical Review C}, 
+			(2018).
+		\item Boston, S.~Reece, 
+			``Time travel in transformation optics.''  
+			\href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.91.124035}{Physical Review D}, 
+			(2015).
+\end{itemize}
+
+\hrule
+\end{minipage}
+\begin{description}
+		\item[Ph.D., Physics] University of North Carolina, 2022
+		\item[M.S., Physics] University of Georgia, 2015
+		\item[B.S., Mathematics and Physics] Georgia College, 2010
+\end{description}
+\hrule
+
+\vfill
+\mbox{}
+
+
+
+
+\end{document}
