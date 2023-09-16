@@ -6,7 +6,8 @@ My PhD in Physics was earned from the University of North Carolina in April, 202
 
 ## technical summary
 
-I am an adept programmer in C++, which is my preference for any production applications.  My two main coding projects for my research were both written entirely in C++.   I have recently begin working to help maintain the [mantid](https://github.com/mantidproject/mantid) codebase for ORNL.
+I have been programming in C/C++ since around 2012.  My two main coding projects for my research were both written using in C++.  I am familiar with low-level C++98 methods, as well as more modern language features in the standard library. 
+I have recently begun working at ORNL with the [mantid](https://github.com/mantidproject/mantid) codebase.
 
 Additionally I have worked extensively with python on a number of projects.  Currently I am part of the team building [SNAPRed](https://github.com/neutrons/SNAPRed) for neutron scattering data reduction at ORNL.  I have also worked with pandas, seaborn, sklearn, statsmodels, FastAPI, spaCy, numpy and matplotlib during my time as a data scientist.
 
