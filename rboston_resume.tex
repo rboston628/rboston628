@@ -26,12 +26,7 @@
 \setlength{\headheight}{0in}
 \setlength{\textheight}{10.5in}
 
-
 \renewcommand*\ttdefault{txtt}
-
-\newcommand{\dotprod}{\boldsymbol{\cdot}}
-\newcommand{\binary}[1]{\texttt{#1}}
-\newcommand{\hex}[1]{\textsf{#1}}
 
 % this file contains commands for drawing tikz figures
 % in particular, for drawing the bell curves in the tech summary
@@ -41,46 +36,52 @@
 
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   PREFACE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{multicols}{2}
  \noindent %
- {\tt \huge  Reece Boston},\hfill{\tt \large Ph.D.~Physics}\\%\vspace{5pt}\\
+ {\tt \huge  Reece Boston},\hfill{\tt \large Ph.D.~Physics}\\
 	{\tt\small numerical astrophysics researcher\hfill\drawplanet}\\
-	{\tt\small seeking complex coding challenges\hfill\drawcalculator\hspace{1pt}\mbox{}}
+	{\tt\small expert scientific software engineer\hfill\drawcalculator\hspace{1pt}\mbox{}}
 %
  \columnbreak\\
- \mbox{}\hfill{\tt  \small tel: \href{tel:770-355-0261}{770.355.0261}\hphantom{aaaaaaa}}\\  %12 + 7a = 19
- \mbox{}\hfill{\tt  \small email: \href{mailto:Reece@thebostons.us}{reece@thebostons.us}}\\ %19
- \mbox{}\hfill{\tt  \small github: \href{https://github.com/rboston628}{rboston628}\hphantom{aaaaaaaaa}}\\%10+9a=19
- \mbox{}\hfill{\tt  \small linkedin: \href{https://www.linkedin.com/in/reece-boston-752046117/}{reece-boston}\hphantom{aaaaaaa}}%12+7a=19
+ \mbox{}\hfill{\tt \small tel: \href{tel:770-355-0261}{770.355.0261}\hphantom{aaaaaaa}}\\  %12 + 7a = 19
+ \mbox{}\hfill{\tt \small email: \href{mailto:Reece@thebostons.us}{reece@thebostons.us}}\\ %19
+ \mbox{}\hfill{\tt \small github: \href{https://github.com/rboston628}{rboston628}\hphantom{aaaaaaaaa}}\\%10+9a=19
+ \mbox{}\hfill{\tt \small linkedin: \href{https://www.linkedin.com/in/reece-boston-752046117/}{reece-boston}\hphantom{aaaaaaa}}%12+7a=19
 \end{multicols}
 
-%\section*{Technology Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   TECHNOLOGY SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hrule
 \begin{itemize}
 \begin{multicols}{3}	
 		\item {\tt C++} ($>$10yr)\\
-			\mygauss{0.82}
-		\item {\tt python} ($>$3yr)\\
-			\mygauss{0.75}
+			\mygauss{0.8}
+		\item {\tt python} ($>$4yr)\\
+			\mygauss{0.9}
 		\item {\tt R} ($>$10yr)\\
 			\mygauss{0.65}
-%		\item {\tt SQL} (1yr)\\
+%		\item {\tt SQL} (3yr)\\
 %			\mygauss{0.75}
 \end{multicols}
-		\item Misc.: SQL,  git,  GNU/Linux, bash, fortran, Java, HTML, Objective-C, x86 assembler.
+		\item Misc.: GNU/Linux, bash, R,  git, fortran, Java, HTML, Objective-C, x86 assembler.
 	\end{itemize}
 \hrule
+\vspace{-0.5\baselineskip}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   WORK EXPERIENCE
 %   Note: I started working while still a graduate student
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.5\baselineskip}
-\section*{Work Experience}
+\section*{\tt Work Experience}
 \begin{minipage}{\textwidth}
 	\begin{description}
 	% OAK RIDGE NATIONAL LABORATORY
-	\item[Scientific Software Engineer] at ORNL, Mar 2023 - present
+	\item[\tt Scientific Software Engineer] at ORNL 
+	\hfill {\tt Mar 2023 - present}
 		\vspace{-0.5\baselineskip}
 		\begin{itemize}
 			\item design, build, test, and document code base for neutron scattering data reduction
@@ -89,7 +90,8 @@
 		\underline{Technology}: 
 		C++17; python [pydantic, pytest, pyqt, mantid]; ubuntu linux; agile [scrum].
 	% ANCHORAGE DIGITAL
-	\item[Quant Researcher] at \href{https://www.anchorage.com}{Anchorage Digital}, Oct 2022 - Mar 2023
+	\item[\tt Quant Researcher] at \href{https://www.anchorage.com}{Anchorage Digital} 
+	\hfill {\tt Oct 2022 - Mar 2023}
 		\vspace{-0.5\baselineskip}
 		\begin{itemize}
 			\item analyze cryptocurrency market liquidity
@@ -101,7 +103,8 @@
 		% and I suspected there would soon be layoffs.  Indeed, they laid off about 20% of the staff
 		% including my entire department a week after I left
 	% COMMUNITY.COM
-	\item[R\&D Data Scientist] at \href{https://www.community.com/about-us}{Community}, Sept 2021 - June 2022
+	\item[\tt R\&D Data Scientist] at \href{https://www.community.com/about-us}{Community} 
+	\hfill {\tt Sep 2021 - Jun 2022}
 		\vspace{-0.5\baselineskip}
 		\begin{itemize}
 			\item analyze big data for product insights using causal inference and market archetyping%
@@ -113,12 +116,14 @@
 		\underline{Technology}: 
 		python [pandas, numpy, sklearn, spaCy]; github; Snowflake SQL; Docker; AWS.
 		% why did I leave: the CEO had planned the budget with a deal that suddenly evaporated
-		% during the market crash.  Over a third of the staff were laid off.
-	\item[Research Assistant] at University of North Carolina, Fall 2016 - Spring 2022
+		% during the post-covid market crash.  Over a third of the staff were laid off.
+	% UNIVERSITY OF NORTH CAROLINA
+	\item[\tt Research Assistant] at University of North Carolina 
+	\hfill {\tt Aug 2016 - May 2022}
 		\vspace{-0.5\baselineskip}
 		\begin{itemize}
 			\item conducted scientific research leading to original publications
-			\item created original research code in C++ within Linux environment using GNU tools
+			%\item created original research code in C++ within Linux environment using GNU tools
 			%\item designed, built, tested and documented project during all development stages
 			%\item integrated with legacy and modern fortran code (e.g.~{\tt GYRE}, {\tt WDEC}, {\tt MESA}, and {\tt ZAMS})
 		\end{itemize}
@@ -127,7 +132,8 @@
 		C++14 [gcc, STL, MPI multithreading, make]; bash scripting; github; fortran.
 		% why did I leave: I graduated in the spring semester, 2022
 	% TEACHING PROFESSOR UNC
-	%\item[Teaching Professor] at University of North Carolina, Summer 2019, 2020
+	%\item[Teaching Professor] at University of North Carolina
+	%\hfill {\tt Summer 2019, 2020}
 		%\vspace{-0.5\baselineskip}
 		%\begin{itemize}
 			%\item communicated complex topics to non-experts in life sciences, with glowing evaluations
@@ -139,17 +145,26 @@
 	\end{description}
 \end{minipage}
 
-\section*{Research Codes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   RESEARCH CODES
+%   Note: I am the sole dev for THRAIN.  
+%         I am a lead dev on SNAPRed
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\tt Research Codes}
 \begin{minipage}{\textwidth}
 	\begin{description}
-		\item[\href{https://github.com/rboston628/grpulse}{\tt GRPulse}:] High-precision asteroseismology code for Newtonian and relativistic stellar models.			
-		\item[\href{https://github.com/rboston628/thrain}{\tt Thrain}:] Astrophysics code to create simple white dwarf stars.
+		%\item[\href{https://github.com/rboston628/grpulse}{\tt GRPulse}:] High-precision asteroseismology code for Newtonian and relativistic stellar models.			
+		\item[\href{https://github.com/rboston628/thrain}{\tt Thrain}:] High-precision asteroseismology code for simple white dwarf stars.
+		\item[\href{https://github.com/neutrons/SNAPRed}{\tt SNAPRed}:] Neutron scattering data reduction code for highly-reconfigurable instruments.
 	\end{description}
 \hrule
 \end{minipage}
-
 \vspace{-0.5\baselineskip}
-\section*{Research Publications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   RESARCH PAPERS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\tt Research Publications}
 \begin{minipage}{\textwidth}
 %\def\staterole{0}
 %\input{papers}
@@ -175,20 +190,19 @@
 			\href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.91.124035}{Physical Review D}, 
 			(2015).
 \end{itemize}
-
 \hrule
 \end{minipage}
-\begin{description}
-		\item[Ph.D., Physics] University of North Carolina, 2022
-		\item[M.S., Physics] University of Georgia, 2015
-		\item[B.S., Mathematics and Physics] Georgia College, 2010
-\end{description}
-\hrule
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{description}
+		\item[\tt Ph.D., Physics] University of North Carolina   \hfill {\tt 2022}
+		\item[\tt M.S., Physics] University of Georgia           \hfill {\tt 2015}
+		\item[\tt B.S., Mathematics and Physics] Georgia College \hfill {\tt 2010}
+\end{description}
+%\hrule
 \vfill
 \mbox{}
-
-
-
 
 \end{document}
