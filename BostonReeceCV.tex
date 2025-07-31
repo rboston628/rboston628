@@ -5,6 +5,7 @@
 
 
 \usepackage{color}
+\usepackage{xspace}
 
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -23,27 +24,74 @@
 
 \renewcommand*\ttdefault{txtt}
 
+\newcommand{\vv}{\rule{1pt}{10pt}\xspace}
+
+\input{decorators}
+
 \pagenumbering{gobble}
 
 \begin{document}
 
-\begin{center}
-{\bf \large S. Reece Boston}\\
-{\bf University of North Carolina}\\
-{\bf \href{mailto:rboston@ad.unc.edu}{rboston@ad.unc.edu}}
-\end{center}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   PREFACE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multicols}{2}
+ \noindent %
+ {\bf \large S.~Reece Boston}\\
+ {numerical astrophysics researcher}\\
+ {expert scientific software engineer}
+%
+ \columnbreak\\
+ \mbox{}\hfill{{\bf email:} \href{mailto:Reece@thebostons.us}{reece@thebostons.us}\hphantom{i}}\\ %19
+ \mbox{}\hfill{{\bf github:} \href{https://github.com/rboston628}{rboston628}\hphantom{aaaaaaaai}}\\%10+9a=19
+ \mbox{}\hfill{{\bf orcid:} \href{https://orcid.org/0000-0001-8122-1961}{0000-0001-8122-1961}}%12+7a=19
+\end{multicols}
+\hrule
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Education}
 \begin{minipage}{\textwidth}
 	\begin{description}
-		\item[Ph.D., Physics] University of North Carolina-Chapel Hill, 2022
-		\item[M.S., Physics] University of Georgia, 2015%, GPA 3.88
-		\item[B.S., Mathematics and Physics] Georgia College, 2010%, Cum Laude, GPA  3.81
-%		\item[A.A., Mathematics] Georgia Perimeter College, 2007%, GPA 3.33
+		\item[Ph.D., Physics] University of North Carolina-Chapel Hill \hfill 2022
+		\item[M.S., Physics] University of Georgia \hfill 2015%, GPA 3.88
+		\item[B.S., Mathematics and Physics] Georgia College \hfill 2010%, Cum Laude, GPA  3.81
+		\item[A.A., Mathematics] Georgia Perimeter College \hfill 2007%, GPA 3.33
 	\end{description}
 \end{minipage}
 
-\section*{Published Work}
+\section*{Research Appointments}
+\begin{minipage}{\textwidth}
+	\begin{description}
+		\item[Scientific Software Engineer] at Oak Ridge National Laboratories \hfill Mar 2023 - present\\
+		\rule{0pt}{12pt}\underline{Topic}: 
+			data reduction for neutron scattering in the Spallation Neutron Source
+		\\
+		\rule{0pt}{12pt}\underline{Responsibilities}: 
+			design, create, and test code for data reduction from scattering experiments;
+			update and maintain existing community code for new purposes;
+			coordinate with stakeholder researchers.	
+		\item[Research Assistant] at University of North Carolina - Chapel Hill \hfill Fall 2016 - Spring 2022\\
+		\underline{Research Advisor}: Charles R.~Evans\\
+		\underline{Topic}: The numerical calculation of pulsation frequencies for white dwarf and other stellar objects in classical and general relativistic settings.
+		\item[Research Assistant] at University of Georgia \hfill Fall 2011 - Spring 2015\\
+		\underline{Research Advisors}:  Steven P. Lewis and William Dennis\\
+		\underline{Topic}:  Design of metamaterials to imitate the properties of curved space-time geometries.  Simulated propagation of light inside these materials using FDTD methods.
+	\end{description}
+\end{minipage}
+
+\section*{Research Software}
+\begin{description}
+	\item[\href{https://github.com/rboston628/thrain}{\tt Thrain}:] Asteroseismology code for simple analytic models of white dwarf stars, using analytic equations of state for high numerical accuracy (C++).
+	\item[\href{https://github.com/rboston628/grpulse}{\tt GRPulse}:] High-precision asteroseismology code for Newtonian, post-Newtonian, and General Relativistic stellar models (C++).
+	\item[\href{https://github.com/neutrons/SNAPRed}{\tt SNAPRed}:] Data reduction code for highly-reconfigurable neutron scattering instruments (Python).
+	\item[\href{https://github.com/mantidproject/mantid}{\tt Mantid}:] Multi-institutional neutron data analysis platform and python API (C++).
+\end{description}
+
+\section*{Published Work \href{https://orcid.org/0000-0001-8122-1961}{\orcid{0.5}}}
 %\def\staterole{1}
 %\input{papers}
 \begin{itemize}
@@ -55,58 +103,6 @@ S.~O.~Kepler, Mar\'ia E.~Camisassa and Santiago Torres, ``General relativistic p
 		\item Boston, S.~Reece, ``Time Travel in Transformation Optics.''  \href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.91.124035}{Physical Review D}, (2015).
 \end{itemize}
 
-\section*{Research Codes}
-\begin{description}
-	\item[\href{https://github.com/rboston628/grpulse}{\tt GRPulse}:] High-precision asteroseismology code for Newtonian, post-Newtonian, and General Relativistic stellar models.  Built-in capability for several basic stellar backgrounds.
-	\item[\href{https://github.com/rboston628/thrain}{\tt Thrain}:] Asteroseismology code for simple analytic models of white dwarf stars, using analytic equations of state for high numerical accuracy.
-\end{description}
-
-\section*{Research Experience}
-\begin{minipage}{\textwidth}
-	\begin{description}
-		\item[Scientific Software Engineer] at Oak Ridge National Laboratories, Mar 2023 - present\\
-		\rule{0pt}{12pt}\underline{Topic}: 
-			data reduction for neutron scattering in the Spallation Neutron Source
-		\\
-		\rule{0pt}{12pt}\underline{Responsibilities}: 
-			design, create, and test code for data reduction from scattering experiments;
-			update and maintain existing community code for new purposes;
-			coordinate with stakeholder researchers.	
-		\item[Research Assistant] at University of North Carolina - Chapel Hill, Fall 2016 - Spring 2022\\
-		\underline{Research Advisor}: Charles R.~Evans\\
-		\underline{Topic}: The numerical calculation of pulsation frequencies for white dwarf and other stellar objects in classical and general relativistic settings.  Calculations performed in C++.
-%		\item[Research Assistant] Fall 2011 - Spring 2015\\
-%		Department of Physics and Astronomy, University of Georgia\\
-%		\underline{Research Advisors}:  Steven P. Lewis and William Dennis\\
-%		\underline{Topic}:  Design of metamaterials to imitate the properties of curved space-time geometries.  Simulated propagation of light inside these materials using FDTD methods using C++.
-	\end{description}
-\end{minipage}
-
-\section*{Industry Experience}
-\begin{minipage}{\textwidth}
-	\begin{description}
-		\item[Quant Researcher] at Anchorage Digital, Oct 2022 - Present
-		\item[R\&D Data Scientist] at \href{https://www.community.com/about-us}{Community}, Sept 2021 - June 2022\\
-			\rule{0pt}{12pt}\underline{Responsibilities}: causal inference; market archetyping; analyze big data for product insights; transforming data for data lakehouse; natural language processing.\\
-			\rule{0pt}{12pt}\underline{Technology}: python [pandas, numpy, sklearn, spaCy]; github; Snowflake SQL; Docker; AWS.
-	\end{description}
-\end{minipage}
-
-\section*{Languages}
-\begin{minipage}{\columnwidth}
-\begin{multicols}{3}
-	\begin{itemize}
-		\item English (native)
-		\item Spanish (spoken in home)
-		\item C++ (advanced) %(7+ years)
-		\item R (advanced) %(9+ years)
-		\item python (intermediate) %(2+ years)
-		\item SQL (advanced) 
-	%	\item \LaTeX (advanced) %(9+ years)
-	\end{itemize}
-\end{multicols}
-\end{minipage}
-
 
 \section*{Teaching Experience}
 \begin{minipage}{\textwidth}
@@ -114,7 +110,6 @@ S.~O.~Kepler, Mar\'ia E.~Camisassa and Santiago Torres, ``General relativistic p
 	\begin{description}
 		\item[Teaching Professor] Summer 2019, Summer 2020\\
 			Course: Physics for Life Sciences (PHYS 115), lecture/studio format\\
-			Lectured on physics.  Setup online homework, wrote exams for courses, coordinated lab section, and organized student absences.
 			Recorded many of \href{https://www.youtube.com/playlist?list=PLGw8-QpmEugz6IxX75R1kvd9NM_53pQXV}{the online lectures} during COVID-19 response (Lec~7-10,14,26-27).
 		\item[Research Mentor] Summer 2020-Summer 2021\\
 		Role: Acting mentor for REU/Senior Honor's Thesis in relativistic pulsation of neutron stars and white dwarfs (LOI:~python).
@@ -145,20 +140,40 @@ S.~O.~Kepler, Mar\'ia E.~Camisassa and Santiago Torres, ``General relativistic p
 %	\end{description}
 %\end{minipage}
 
+\section*{Industry Experience}
+\begin{minipage}{\textwidth}
+	\begin{description}
+		\item[Quant Researcher] at Anchorage Digital, Oct 2022 - Mar 2023\\
+			Worked on crypto market liquidity metrics.  Transitioned following FTX collapse.\\
+			\underline{Technology}: python [pandas, gsheets]; SQL[BigQuery]
+		\item[R\&D Data Scientist] at \href{https://www.community.com/about-us}{Community}, Sept 2021 - June 2022\\
+			Studied causal inference in text message responses; market archetyping; analyze big data for product insights; transforming data for data lakehouse; natural language processing.\\
+			\rule{0pt}{12pt}\underline{Technology}: python [pandas, numpy, sklearn, spaCy]; SQL [Snowflake]
+	\end{description}
+\end{minipage}
+
+\section*{Technical Skills}
+\begin{minipage}{\columnwidth}
+	\begin{description}
+		\item[Computer Languages:] C++ (expert), Python (advanced), SQL (intermediate), R (historical)
+		\item[Human Languages:] English (native), Spanish (advanced spoken fluency, domestic use)
+		\item[Tools:] Git, GNU/Linux, Bash. Conda/Mamba, CMake, Github Actions, VS Code, \LaTeX
+	\end{description}
+\end{minipage}
 
 \section*{Awards and Honors}
 \begin{minipage}{\textwidth}
 	\begin{description}
 		\item[Hamilton Award] 2021, UNC\\
-			Monetary award given by the Physics and Astronomy department at UNC.
+			Granted by the Physics and Astronomy department at UNC.
 		\item[NC Space Grant] \href{https://ncspacegrant.ncsu.edu/events/2021-space-symposium/nc-space-symposium-presentations/astronomy-astrophysics/}{2020}, UNC\\
-			Monetary grant awarded through NASA for promising gradate student work related to NASA missions.
+			Awarded through NASA for promising gradate student work related to NASA missions.
 		\item[Outstanding Physics TA] 2018, UNC\\
-			Awarded for performance as  teaching  assistant.  Included monetary award.
-%		\item[Outstanding Physics Major] 2010, GCSU\\
-%			Presented to top graduating physics major.
-%		\item[Sarah Nelson Scholarship] 2008-2009, GCSU\\
-%			Presented to exceptional math majors.
+			Monetary award recognizing exceptional work as teaching assistant.
+		\item[Outstanding Physics Major] 2010, GCSU\\
+			Presented to top graduating physics major.
+		\item[Sarah Nelson Scholarship] 2008-2009, GCSU\\
+			Presented to exceptional math majors.
 %		\item[President's List] Fall 2008, Spring 2009\\
 %			Awarded for 4.0 semester GPA 
 %		\item[Dean's List] Sprint 2008, Fall 2009, Spring 2010, Spring 2007, Fall 2007\\
