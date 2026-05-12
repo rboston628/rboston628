@@ -1,4 +1,4 @@
-\documentclass[11pt, letter]{article}
+\documentclass[11pt]{article}
 \usepackage[
 	pdfauthor={Reece Boston},
 	pdftitle={This candidate's resume must be summarized in the form of a sonnet},
@@ -31,6 +31,16 @@
 \setlength{\headheight}{0in}
 \setlength{\textheight}{10.5in}
 
+\setlength{\parindent}{0pt}
+
+\renewcommand{\descriptionlabel}[1]{%
+  \hspace{\labelsep}\normalfont\bfseries #1%
+}
+
+% create a visual separate between title kewords
+\usepackage{xspace}
+\newcommand{\vl}{\textbullet\xspace}
+
 \renewcommand*\ttdefault{txtt}
 
 % this file contains commands for drawing tikz figures
@@ -44,69 +54,86 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   PREFACE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{multicols}{2}
+% \begin{multicols}{2}
  \noindent %
- {\tt \huge  Reece Boston},\hfill{\tt \large Ph.D.~Physics}\\
-	{\tt\small numerical astrophysics researcher\hfill\drawplanet}\\
-	{\tt\small expert scientific software engineer\hfill\drawcalculator\hspace{1pt}\mbox{}}
-%
- \columnbreak\\
- \mbox{}\hfill{\tt \small tel: \href{tel:770-355-0261}{770.355.0261}\hphantom{aaaaaaa}}\\  %12 + 7a = 19
- \mbox{}\hfill{\tt \small email: \href{mailto:Reece@thebostons.us}{reece@thebostons.us}}\\ %19
- \mbox{}\hfill{\tt \small github: \href{https://github.com/rboston628}{rboston628}\hphantom{aaaaaaaaa}}\\%10+9a=19
- \mbox{}\hfill{\tt \small linkedin: \href{https://www.linkedin.com/in/reece-boston-752046117/}{reece-boston}\hphantom{aaaaaaa}}%12+7a=19
-\end{multicols}
+ {\large  {\bf Reece Boston}, PhD} \hfill {email: \href{mailto:Reece@thebostons.us}{reece@thebostons.us}}\\
+ {\bf \small
+ 	software engineer \vl 
+	c++/python \vl 
+  gnu/linux \vl
+	numerical methods
+ }
+ \hfill
+ \href{https://github.com/rboston628}{\drawgitcat{0.30}}
+ \href{https://orcid.org/0000-0001-8122-1961}{\orcid{0.55}}
+\\
+\hrule\null\\
+ {\small 
+	Software engineer with expertise in scientific computing, simulation software, 
+	CI/CD infrastructure, numerical methods, and large-scale collaborative software development. 
+	Experienced building high-performance analysis tools, modernizing legacy systems, and developing 
+	reproducible workflows in C++ and Python.
+ }\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   TECHNOLOGY SUMMARY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hrule
 \vspace{-0.5\baselineskip}
-\begin{multicols}{3}
+\begin{multicols}{2}
+\subsection*{Languages + Frameworks}
 \begin{itemize}
-	\item {\tt C++} ($>$10yr)\\
-		\mygauss{0.8}
-\columnbreak
-	\item {\tt python} ($>$4yr)\\
-		\mygauss{0.8}
-%	\item {\tt R} ($>$10yr)\\
-%		\mygauss{0.6}
-%	\item {\tt SQL} ($\sim$2yr)\\
-%		\mygauss{0.6}
+	\item C++17/20 [STL, boost, HDF5, CxxTest]
+	\item Python [Pydantic, NumPy, FastAPI]
+	\item Bash, Fortran, R
 \end{itemize}
 \columnbreak
-{\flushright {\tt tools:} git,~gnu/linux,~bash, \mbox{github actions CI/CD}, \LaTeX, conda/mamba, \mbox{vscode}}
+\subsection*{Tools \hfill \drawcalculator}
+\begin{itemize}
+\item Git, Github Actions CI/CD
+\item GNU/Linux, GCC, Make, VSCode
+\item PyTest, Git LFS Mounts
+\end{itemize}
 \end{multicols}
-\vspace{-0.5\baselineskip}
 \hrule
-\vspace{-0.5\baselineskip}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   WORK EXPERIENCE
 %   Note: I started working while still a graduate student
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{\tt Work Experience}
-\begin{minipage}{\textwidth}
-	\begin{description}
-	
+\begin{list}{}{
+  \leftmargin=5pt
+  \labelwidth=0pt
+  \itemindent=\leftmargin
+}
 	% OAK RIDGE NATIONAL LABORATORY
-	\item[\tt Scientific Software Engineer] at ORNL 
-	\hfill {\tt Mar 2023 - present~}
-	% responsibilities: design, build, test, and document code base for neutron scattering data reduction
-	% technology: C++17 [cmake, cxxtest, STL]; python [pydantic, pytest, pyqt]; agile [scrum].
-	
+	\item[\bf Scientific Software Engineer] at Oak Ridge National Laboratory 
+	\hfill {Mar 2023 -- present~}
+	\begin{itemize}
+		\item Technical release manager, gatekeeper, and contributor for Mantid, a 1.5Mloc, multi-institution, international software project.
+		\item Develop and maintain large-scale C++17/20 and Python scientific software used for neutron-scattering data analysis at the Spallation Neutron Source.
+		\item Refactored legacy HDF5 file-loading with strangler pattern, improving load performance ~60$\times$ and removing external dependencies, while preserving backward compatibility.
+		\item Contributor and senior member on SNAPRed, a data reduction code for highly-reconfigurable instruments, providing start-to-finish data organization and scientific workflows to SNS clients.
+		\item Implement CI/CD workflows and automated testing infrastructure using GitHub Actions, CMake, and PyTest or CxxTest.
+		\item Diagnose and resolve performance, numerical-correctness, and integration issues.
+		\item Collaborate with instrument scientists, software engineers, and domain experts in distributed development teams.
+	\end{itemize}
+  % technology: C++17 [cmake, cxxtest, STL]; python [pydantic, pytest, pyqt]; agile [scrum].
+	\vspace{-0.5\baselineskip}
+
 	% ANCHORAGE DIGITAL
-	\item[\tt Quant Researcher] at \href{https://www.anchorage.com}{Anchorage Digital} 
-	{\scriptsize(transitioned following FTX collapse)}
-	\hfill {\tt~Oct 2022 - Mar 2023}
-	% responsibilities: analyze cryptocurrency market liquidity
+	\item[\bf Quant Researcher] at \href{https://www.anchorage.com}{Anchorage Digital} 
+	\hfill {Oct 2022 - Mar 2023}
+	\begin{itemize}
+   \item Analyze cryptocurrency market liquidity with Pandas, GSheets, and BigQuery.
+  \end{itemize}
 	% technology: python [pandas, gsheets]; Google Cloud; BigQuery.
 	% why did I leave: I joined in Oct 2022 and the FTX disaster happened in Nov 2022. 
 	%   This caused a huge slowdown in the cryptocurrency market, and I suspected there 
 	%   would soon be layoffs.  Indeed, a week before my last day they laid off about 20% 
 	%   of the staff, including my entire department
-	
+	\vspace{-0.5\baselineskip}
+
 	% TEAM FORO
 	%\item[\tt Data Scientist] at Team Foro (part time, temporary)
 	%\hfill {\tt Jun 2022 - Oct 2022}
@@ -115,28 +142,34 @@
 	% why did I leave: this was a temporary and part-time position after my layoff from Commmunity
 
 	% COMMUNITY.COM
-	\item[\tt R\&D Data Scientist] at \href{https://www.community.com/about-us}{Community} 
-	{\scriptsize(role ended in post-covid tech downturn)}
-	\hfill {\tt Sep 2021 - Jun 2022}
+	\item[\bf Data Scientist] at \href{https://www.community.com/about-us}{Community} 
+	\hfill {Sep 2021 - Jun 2022}
+	\begin{itemize}
+   \item Analyze big data for product insights in Jupyter with Pandas, NumPy, spaCy, and SKLearn.
+  \end{itemize}
 	% responsibilities:
     %   - analyze big data for product insights using causal inference and market archetyping%
     %   - work on team with data engineering to transform databases for data lakehouse [dbt]
     %   - ownership of platform NLP microservices for SMS tagging
     %   - present key findings to stakeholders in product and finance
-    %   - over a third of staff let go due to funds mismanagement
     % technology: python [pandas, numpy, sklearn, spaCy, jupyter]; github; Snowflake SQL; Docker; AWS.
 	% why did I leave: Over a third of the staff were laid off during the post-covid market crash.  
 
+	\vspace{-0.5\baselineskip}
+
 	% UNIVERSITY OF NORTH CAROLINA
-	\item[\tt Research Assistant] at University of North Carolina
-	\hfill{\tt Aug 2016 - May 2022}\!
-	% responsibilities: 
-    %   - conducted scientific research leading to original publications
-    %   - created original research code in C++ within Linux environment using GNU tools
-    %   - designed, built, tested and documented project during all development stages
-    %   - integrated with legacy and modern fortran code (e.g.~{\tt GYRE}, {\tt WDEC}, {\tt MESA}, and {\tt ZAMS})
+	\item[\bf Research Assistant] at University of North Carolina - Chapel Hill
+	\hfill{Aug 2016 -- May 2022}\!
+	\begin{itemize}
+   \item Designed, developed, tested, and maintained high-performance scientific software in C++ within Linux/GNU development environments.
+   \item Implemented low-level numerical functionality using C++14, Bash, GCC, and Make-based build workflows.
+   \item Integrated modern C++ software with legacy and contemporary Fortran scientific codebases.
+   \item Developed software across the full lifecycle including architecture, implementation, validation, debugging, documentation, and performance analysis.
+   \item Mentored high school and undergraduate research students in replicating numerical scientific workflows.
+  \end{itemize}
 	% technology: C++14 [gcc, make, gnuplot, STL]; bash; fortran.
 	% why did I leave: I graduated in the spring semester, 2022
+  \vspace{-0.5\baselineskip}
 
 	% TEACHING PROFESSOR UNC
 	%\item[Teaching Professor] at University of North Carolina
@@ -145,101 +178,19 @@
 	% and recorded many of \href{https://www.youtube.com/playlist?list=PLGw8-QpmEugz6IxX75R1kvd9NM_53pQXV}{the online lectures} for COVID-19 response (Lec~7-10,14,26-27)
 	% why did I leave: these were two contracts for two summer terms, offered to grad students.  
 	% I was invited back for a third, but wanted another student to have the opportunity.
-	\vspace{-0.5\baselineskip}
-	\end{description}
-\hrule
-\end{minipage}
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %   PROJECTS
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.5\baselineskip}
-\section*{\tt Selected Projects}
-\begin{minipage}{\textwidth}
-  \begin{description}		
-  	%%% THRAIN
-    \item[\href{https://github.com/rboston628/thrain}{\tt Thrain}:]
-    High-precision asteroseismology code for simple white dwarf stars \hfill {\tt UNC}
-	\vspace{-0.5\baselineskip}
-    \begin{description}
-      \item[role] sole dev and designer; developed during dissertation research
-      \item[impact] enabled ensemble fitting to validate long-standard hypothesis in stellar evolution
-      \item[tech] C++ [low-level, manual memory management], written in text editor, compiled in gcc
-    \end{description}
-    %%% SNAPRed
-    \item[\href{https://github.com/neutrons/SNAPRed}{\tt SNAPRed}:]
-    Data reduction code for highly-reconfigurable neutron scattering instruments \hfill {\tt ORNL}
-    \vspace{-0.5\baselineskip}
-    \begin{description}
-      \item[role] senior developer; co-designed system architecture
-      \item[impact] built NoSQL-based tool to map instrument states to calibrations
-      \item[tech] python [pydantic, pytest, PyQt5]
-    \end{description}
-    %%% MANTID
-    \item[\href{https://github.com/mantidproject/mantid}{\tt Mantid}:]
-    Multi-institutional neutron data analysis platform and python API \hfill {\tt ORNL}
-    \vspace{-0.5\baselineskip}
-    \begin{description}
-      \item[role] contributor and gatekeeper
-      \item[impact] refactored legacy file management system using the strangler pattern
-      \item[tech] C++17/20 [cmake, cxxtest, hdf5/H5Cpp, STL]
-    \end{description}
-%    %%% COMMUNITY
-%    \item[\tt labyrinth:]
-%     \hfill {\tt Community}
-%    \vspace{-0.5\baselineskip}
-%    \begin{description}
-%      \item[role] data scientist
-%      \item[impact] found important patterns in text message responses to drive user engagement
-%      \item[tech] python [pandas, numpy, sklearn, spaCy]; SQL [Snowflake]; Docker
-%    \end{description}
-  \end{description}
-\hrule
-\end{minipage}
-\vspace{-0.5\baselineskip}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   RESARCH PAPERS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.5\baselineskip}
-\section*{\tt Research Publications \hfill \href{https://orcid.org/0000-0001-8122-1961}{\orcid{0.55}}}
-\begin{minipage}{\textwidth}
-%\def\staterole{0}
-%\input{papers}
-\begin{itemize}
-		\item Alejandro H.~C\'orsico, \underline{S.~Reece Boston} et al, 
-%			Leandro G.~Althaus, Mukremin Kilic, S.~O.~Kepler, Mar\'ia E.~Camisassa and Santiago Torres, 
-			``General relativistic pulsations of ultra-massive ZZ Ceti stars,'' 
-			\href{https://doi.org/10.1093/mnras/stad2248}{MNRAS}, 
-			(2023).
-		\item Boston, S.~Reece, C.~R.~Evans and J.~C.~Clemens, 
-			``Relativistic Corrections in White Dwarf Asteroseismology.'' 
-			\href{https://iopscience.iop.org/article/10.3847/1538-4357/acd446}{Astrophysical Journal}, (2023)
-		\item Boston, S.~Reece, 
-			\emph{Newtonian and Relativistic White Dwarf Asteroseismology}, 
-			\\\href{https://cdr.lib.unc.edu/concern/dissertations/jw827n44n?locale=en}{Ph.D. dissertation}, 
-			UNC, (2022).
-		\item de Souza, Rafael, \underline{S.~Reece Boston}, Alain Coc, and Christian Iliadis, 
-			``Thermonuclear fusion rates for tritium+deuterium using Bayesian methods.''  
-			\href{http://journals.aps.org/prc/abstract/10.1103/PhysRevC.99.014619}{Physical Review C}, 
-			(2018).
-		\item Boston, S.~Reece, 
-			``Time travel in transformation optics.''  
-			\href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.91.124035}{Physical Review D}, 
-			(2015).
-\end{itemize}
-\hrule
-\end{minipage}
+\end{list}
+% \end{minipage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.5\baselineskip}
+\hrule
+\vspace{-0.5\baselineskip}
 \begin{description}
-		\item[\tt Ph.D., Physics] University of North Carolina   \hfill {\tt 2022}
-%		\item[\tt M.S., Physics] University of Georgia           \hfill {\tt 2015}
-%		\item[\tt B.S., Mathematics and Physics] Georgia College \hfill {\tt 2010}
+\item[Ph.D., Physics] University of North Carolina - Chapel Hill \hfill \drawplanet\\
+ \href{https://cdr.lib.unc.edu/concern/dissertations/jw827n44n?locale=en}{\emph{Newtonian and Relativistic White Dwarf Asteroseismology}}, 2022\\
+ Publications in MNRAS, Astrophysical Journal, Physical Review C and D, and SoftwareX.
 \end{description}
-\vfill
-\mbox{}
 
 \end{document}
